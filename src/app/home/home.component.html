@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TripBoss</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="/assets/font/fonts.css">
+  <!-- normalize css -->
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="/assets/css/utility.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body>
+  <router-outlet></router-outlet>
+  <app-navbar></app-navbar>
+
+  <!-- end of navbar
+
+<!-- header -->
+  <header class="flex">
+    <div class="container">
+      <div class="header-title">
+        <h1>Leave Your Footprints</h1>
+        <p><em> We are thrilled to offer you an exceptional travel experience, whether it's for a quick weekend getaway
+            or an
+            extended vacation. Our goal is to provide you with the best possible travel options, so you can explore the
+            world
+            without any hassles.</em></p>
+      </div>
+      <div class="header-form">
+        <h2>Choose your Travel location:</h2>
+        <form class="flex">
+          <input type="text" class="form-control" placeholder="Destination name">
+          <input type="date" class="form-control" placeholder="Date">
+          <input type="number" class="form-control" placeholder="Price ($)">
+          <input type="submit" class="btn" value="Search">
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- featured section -->
+  <section id="featured" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">know about some places before your travel</span>
+        <h2 class="lg-title">featured places</h2>
+      </div>
+
+      <div class="featured-row">
+        <div class="featured-item my-2 shadow">
+          <img src="assets/featured-reo-de-janeiro-brazil.jpg" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Reo De Janeiro, Brazil
+            </span>
+            <div>
+              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero
+                soluta illum, harum amet excepturi sit?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item my-2 shadow">
+          <img src="assets/featured-north-bondi-australia.jpg" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              North Bondi, Australia
+            </span>
+            <div>
+              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero
+                soluta illum, harum amet excepturi sit?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item my-2 shadow">
+          <img src="assets/featured-berlin-germany.jpg" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Berlin, Germany
+            </span>
+            <div>
+              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero
+                soluta illum, harum amet excepturi sit?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item my-2 shadow">
+          <img src="assets/featured-khwaeng-wat-arun-thailand.jpg" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Khwaeng wat arun, thailand
+            </span>
+            <div>
+              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero
+                soluta illum, harum amet excepturi sit?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item my-2 shadow">
+          <img src="assets/featured-rome-italy.jpg" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Rome, Italy
+            </span>
+            <div>
+              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero
+                soluta illum, harum amet excepturi sit?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-item my-2 shadow">
+          <img src="assets/featured-fuvahmulah-maldives.jpg" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              fuvahmulah, maldives
+            </span>
+            <div>
+              <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sed dignissimos libero
+                soluta illum, harum amet excepturi sit?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of featured section -->
+
+  <!-- services section -->
+  <section id="services" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">know about services that we offer</span>
+        <h2 class="lg-title">Our services</h2>
+      </div>
+
+      <div class="services-row">
+        <div class="services-item">
+          <span class="services-icon">
+            <i class="fas fa-hotel"></i>
+          </span>
+          <h3>Luxurious Hotel</h3>
+          <p class="text">Suites and special room occupants should be given complimentary access to the fitness centre,
+            spa, salon, pools and other exclusive features of the hotel. There should be a 24/7 room service, concierge,
+            gym and pool facility.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="services-item">
+          <span class="services-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </span>
+          <h3>Trave Guide</h3>
+          <p class="text">Helps you explore the unexplored streets, corners, food joints, and architectural structures,
+            cultural and historical information.</p><br><br><br>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="services-item">
+          <span class="services-icon">
+            <i class="fas fa-money-bill"></i>
+          </span>
+          <h3>Suitable Price</h3>
+          <p class="text">Get the luxirious facilities at budget price.</p><br><br><br><br><br>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of services section -->
+
+  <!-- testimonials section -->
+  <section id="testimonials" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">what our clients say about us</span>
+        <h2 class="lg-title">testimonials</h2>
+      </div>
+
+      <div class="test-row">
+        <div class="test-item">
+          <p class="text">The bike tour in Rio and the day in Paraty were the best led tours. The hotels in Arraial
+            de Cabo and Paraty were the best hotels. The Iguazu falls were spectacular as was the natural sights in Rio.
+            The Amazon was so peaceful and beautiful. The wedding site at Arraial de Cabo was also pretty and fun.
+            Paraty
+            we enjoyed and could have spent more time there.</p>
+          <div class="test-item-info">
+            <img src="assets/test-1.jpg" alt="testimonial">
+            <div>
+              <h3>Kevin Wilson</h3>
+              <p class="text">Trip to Brazil</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-item">
+          <p class="text">We had a fabulous trip to Maldives a special thanks to Footprint Holidayz. Our trip was
+            seamless,
+            there was no delay in any pick up or drop. Everything promised on the itinerary was fulfilled and we
+            couldn't have
+            booked a better trip than this and that too in the best prices possible.</p>
+          <div class="test-item-info">
+            <img src="assets/test-2.jpg" alt="testimonial">
+            <div>
+              <h3>Ben Davis</h3>
+              <p class="text">Trip to Maldives</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-item">
+          <p class="text">It was a good experience with Perfect Holiday Planners . Great value for money and never
+            ending
+            support. Both hotels were good with a perfect view.</p>
+          <div class="test-item-info">
+            <img src="assets/test-3.jpg" alt="testimonial">
+            <div>
+              <h3>Jaura Jones</h3>
+              <p class="text">Trip to Thailand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of testimonials section -->
+
+  <!-- video section -->
+  <app-video></app-video>
+  <!-- end of video section -->
+
+  <!-- footer -->
+  <app-footer></app-footer>
+  <!-- end of footer -->
+</body>
+<!-- js -->
+<script src="assets/js/script.js"></script>
+
+</html>
